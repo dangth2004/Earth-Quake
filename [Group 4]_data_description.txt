@@ -1,0 +1,55 @@
+1) Mô tả dữ liệu:
+Link lấy dữ liệu: https://www.kaggle.com/datasets/shreyasur965/recent-earthquakes. Thực hiện download file zip trên trang web rồi giải nén file là có file csv chứa dữ liệu
+Dữ liệu gồm 1137 mẫu, mỗi mẫu có 3 thuộc tính. Chi tiết về ý nghĩa các thuộc tính như dưới đây
+- id (object): Mã định danh duy nhất cho mỗi sự kiện động đất.
+- magnitude (float64): Cường độ của trận động đất trên thang độ Richter.
+- type (object): Loại sự kiện địa chấn (động đất, vụ nổ, v.v.).
+- title (object): Tiêu đề của sự kiện động đất (địa điểm và cường độ).
+- date (object): Ngày trận động đất xảy ra.
+- time (int64): Thời gian trận động đất xảy ra.
+- updated (int64): Thời điểm cập nhật cuối cùng cho sự kiện.
+- url (object): Liên kết đến chi tiết về sự kiện động đất.
+- detailUrl (object): Liên kết đến thông tin chi tiết bổ sung.
+- felt (int64): Số lượng người báo cáo đã cảm nhận được trận động đất.
+- cdi (int64): Cường độ do cộng đồng xác định, mức độ mà sự kiện được cảm nhận.
+- mmi (int64): Cường độ Mercalli cải tiến, thang đo được sử dụng để đo cường độ của trận động đất.
+- alert (object): Mức cảnh báo (xanh, vàng, cam, đỏ).
+- status (object): Trạng thái của sự kiện (đã xem xét, tự động).
+- tsunami (int64): Cờ cảnh báo sóng thần (0 = không có nguy cơ, 1 = có nguy cơ).
+- sig (int64): Độ quan trọng của trận động đất, dựa trên cường độ và tác động.
+- net (object): Mạng lưới phát hiện trận động đất.
+- code (object): Mã được mạng lưới gán cho sự kiện.
+- ids (object): ID của các sự kiện khác liên quan đến trận động đất này.
+- sources (object): Nguồn dữ liệu cho sự kiện.
+- types (object): Loại sự kiện liên quan đến trận động đất.
+- nst (int64): Số lượng trạm địa chấn đã ghi lại sự kiện.
+- dmin (float64): Khoảng cách tối thiểu đến tâm chấn.
+- rms (float64): Độ lệch chuẩn của tín hiệu, dùng để đo cường độ động đất.
+- gap (float64): Khoảng trống dữ liệu giữa các trạm phát hiện trận động đất.
+- magType (object): Loại cường độ (ví dụ: mb, Ms).
+- geometryType (object): Loại hình học cho vị trí (thường là "Điểm").
+- depth (float64): Độ sâu của trận động đất tính bằng km.
+- latitude (float64): Vĩ độ của tâm chấn động đất.
+- longitude (float64): Kinh độ của tâm chấn động đất.
+- place (object): Mô tả chung về vị trí của trận động đất.
+- distanceKM (int64): Khoảng cách từ nơi có dân cư gần nhất tính bằng km.
+- placeOnly (object): Cờ cho biết nếu chỉ có thông tin về địa điểm.
+- location (object): Địa chỉ đầy đủ hoặc mô tả vị trí của trận động đất.
+- continent (object): Châu lục nơi xảy ra trận động đất.
+- country (object): Quốc gia nơi xảy ra trận động đất.
+- subnational (object): Vùng cấp dưới quốc gia nơi xảy ra trận động đất.
+- city (object): Thành phố gần nhất với trận động đất.
+- locality (object): Địa phương hoặc khu vực lân cận.
+- postcode (float64): Mã bưu điện của khu vực bị ảnh hưởng.
+- what3words (object): Mã ba từ độc nhất đại diện cho vị trí.
+- timezone (int64): Múi giờ của trận động đất.
+- locationDetails (object): Thông tin chi tiết bổ sung về vị trí của trận động đất
+
+2) Hướng dẫn tổ chức thư mục
+Tải về các file [Group 4]_SourceCode.py hoặc [Group 4]_SourceCode.ipynb và file csv dữ liệu từ link bên trên. Lưu vào cùng một thư mục (nếu không thì phải đổi lại data_path trong file source code là đường dẫn đến file csv)
+
+3) Thực hiện thực nghiệm
+Trước tiên cần phải cài đặt python3 vào máy. Link hướng dẫn cài đặt ngôn ngữ python: https://www.python.org/downloads/
+Cài đặt các thư viện cần thiết: pandas, seaborn, matplotlib.pyplot, numpy, time, scikit-learn. Tải các thư viện bằng câu lệnh sau: `pip install pandas seaborn matplotlib.pyplot numpy scikit-learn` trên Terminal (Linux) hoặc Command Prompt (Windows)
+Để chạy file [Group 4]_SourceCode.py thì cần mở Terminal lên, di chuyển đến thư mục có chứa file này, gõ dòng lệnh: `python3 [Group 4]_SourceCode.py`
+Đối với file [Group 4]_SourceCode.ipynb cần phải có phần mềm Jupyter Notebook hoặc Jupyter Lab. Link hướng dẫn download phần mềm Jupyter: https://jupyter.org/install
